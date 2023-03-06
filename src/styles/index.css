@@ -10,3 +10,63 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+
+.container{
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    height: 200px;
+    width: 100px;
+	background-color: black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#top-trafficlight{
+    background: rgb(20, 19, 19);
+    height: 150px;
+    width: 20px;
+    position: absolute;
+    top: 50px;
+    left: 440px;
+   
+}
+
+.light {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    z-index: 99;
+    gap: 3px;
+  }
+  
+
+
+.black {
+	background-color: rgb(95, 91, 91);
+}
+
+.red {
+	background-color: red;
+    z-index: 99;
+}
+
+.orange {
+    background-color: orange;  
+    z-index: 99;
+}
+
+.green {
+    background-color: green;
+    z-index: 99;
+}
+
+.btn {
+    position: absolute;
+    width: 100px;
+    top: 500px;
+    left: 400px;
+}
