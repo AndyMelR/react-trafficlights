@@ -7,6 +7,7 @@ const Semaforo = () => {
   const red = "red";
   const orange = "orange";
   const green = "green";
+  const purpura = "purpura";
 
   const [trafficLights, setTrafficLights] = useState(black);
 
@@ -21,16 +22,13 @@ const Semaforo = () => {
     <>
     <div id="top-trafficlight"></div>
       <div className="container">
-        
         <div className={`light ${trafficLights === red ? red : black}`}></div>
         <div className={`light ${trafficLights === orange ? orange : black}`}></div>
         <div className={`light ${trafficLights === green ? green : black}`}></div>
-        
       </div>
-      <div id="button">
+       <div id="button">
           <button className= "btn btn-lg btn-success" onClick={() => startTrafficLights()}>Switch On</button>
         </div>
-      
     </>
   );
 };
