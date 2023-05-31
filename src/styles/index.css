@@ -11,60 +11,71 @@
 
 */
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color:#2aa5a5;
+}
+
 .container{
-    position: absolute;
-    top: 200px;
-    left: 400px;
+    display: grid;
+    place-items: center;
+}
+
+.semaphore {
+    width: 100px;
     height: 200px;
-    width: 100px;
-	background-color: black;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    background-color: #2c3e50;
+    padding: 10px;
 }
 
-#top-trafficlight{
-    background: rgb(20, 19, 19);
-    height: 150px;
-    width: 20px;
-    position: absolute;
-    top: 50px;
-    left: 440px;
-   
-}
-
-.light {
-    width: 50px;
-    height: 50px;
+.light{
+    display: block;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    margin: 10px;
-    z-index: 99;
-    gap: 3px;
-  }
-
-.black {
-	background-color: rgb(95, 91, 91);
+    background-color: rgb(0, 0,0,0.3);
+    position: relative;
 }
 
-.red {
-	background-color: red;
-}
-
-.orange {
-    background-color: orange;  
-}
-
-.green {
-    background-color: green;
-}
-
-.purpura {
-    background-color: blueviolet;
-}
-
-.btn {
+.light::after{
+    content: '';
     position: absolute;
-    width: 100px;
-    top: 500px;
-    left: 400px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-right: 4px solid rgb(255, 255,255,0.6);
+    top: 5%
 }
+
+.traffic-top{
+    width: 8px;
+    height: 150px;
+    background-color: rgb(0, 0,0,0.5);
+}
+
+.red{
+    background-color: #c0392b;
+    box-shadow: 0 0 10px 1px #c0392b;
+}
+.yellow{
+    background-color: #f1c40f;
+    box-shadow: 0 0 10px 1px #f1c40f;
+}
+.green{
+    background-color: #2ecc71;
+    box-shadow: 0 0 10px 1px #2ecc71;
+}
+  
+  
